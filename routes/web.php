@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-Route::post('/calcular', [App|Http|Controllers|controllerCalculo::class, 'calcular'])
+Route::post('/calcular', [App\Http\Controllers\controllerCalculo::class, 'calcular'])->name('calcular');
